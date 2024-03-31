@@ -1,0 +1,97 @@
+body {
+  background-color: rgb(73, 128, 173);;
+  color: #0c5460;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1rem;
+
+  padding: 0px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  /* Set the width as you like, it will scale proportionally */
+  height: 600px;
+  /* Set the height as you like */
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+.carousel-inner img:before {
+  background: rgba(0, 0, 0, 0.45);
+  content: "";
+  position: absolute;
+  height: 600px;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #0c5460;
+  color: rgb(201, 214, 223);
+  font-weight: bold;
+  line-height: 35px;
+  margin-left: 0px;
+  padding-right: 10px;
+}
+a.navbar-brand.mx-4:hover {
+  color: white !important;
+}
+.navbar-nav li a {
+  color: rgb(201, 214, 223);
+}
+
+.navbar-nav .nav-link.active-nav {
+  color: white !important;
+  border-bottom: solid white 1px !important;
+}
+
+.navbar-nav li a:hover {
+  color: white !important;
+  border-bottom: solid white 1px;
+
+  line-height: 35px;
+  cursor: pointer;
+}
+button.login.btn.text-light {
+  background-color: rgba(201, 214, 223, 0.534);
+}
+button.login.btn.text-light:hover {
+  background-color: rgba(201, 214, 223, 0.279);
+}
+.jumbotron.jumbotron-fluid.mb-0.mt-0.text-center {
+  background-color: #0c5460;
+}
+.greenbtn:hover{
+    background-color: #79cddc;
+}
+a#greenbtn.btn:hover{
+    background-color: #79cddc;
+}
+/* .btn:hover{background-color: rgb(226, 61, 43); color: gold;} */
+
+@media (max-width: 1410px) {
+  .navbar {
+    flex-direction: row;
+    align-items: start;
+    font-size: smaller;
+  }
+  .navbar-brand {
+    font-size: medium;
+  }
+  a.btn.btn-danger.text-light {
+    font-size: small;
+  }
+  button.login.btn.text-light {
+    font-size: small;
+  }
+  .navbar-nav {
+    margin-top: 20px; /* Adjust the spacing between links */
+  }
+
+  .navbar-nav li {
+    margin-bottom: 10px; /* Adjust the spacing between individual links */
+  }
+}
